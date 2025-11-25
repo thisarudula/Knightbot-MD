@@ -3,6 +3,7 @@
   - refs/heads/main
   events:
   - type: WEBHOOK
+  disabled: true
   fail_on_prepare_env_warning: true
   actions:
   - action: msbuild
