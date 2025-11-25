@@ -11,4 +11,6 @@
     - "# Example"
     - "# xcodebuild -resolvePackageDependencies -workspace <your_workspace_name> -scheme <your_scheme_name>"
     shell: BASH
+    pre_start_simulators:
+    - iPad mini (A17 Pro)
     xcode_version: 16.4.0
