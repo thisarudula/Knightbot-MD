@@ -4,3 +4,11 @@
   events:
   - type: WEBHOOK
   fail_on_prepare_env_warning: true
+  actions:
+  - action: Execute command
+    type: NATIVE_BUILD_MAC_VM
+    commands:
+    - "# Example"
+    - "# xcodebuild -resolvePackageDependencies -workspace <your_workspace_name> -scheme <your_scheme_name>"
+    shell: BASH
+    xcode_version: 16.4.0
