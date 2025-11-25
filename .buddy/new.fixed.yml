@@ -4,3 +4,10 @@
   events:
   - type: WEBHOOK
   fail_on_prepare_env_warning: true
+  actions:
+  - action: msbuild
+    type: NATIVE_BUILD_WINDOWS
+    commands:
+    - nuget restore
+    - msbuild
+    instance_type: GENERAL_MEDIUM
